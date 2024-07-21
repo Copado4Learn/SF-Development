@@ -30,3 +30,29 @@ System.debug(currentTime);
 //DateTime data type
 DateTime currentDateTime = DateTime.newInstance(2024, 20, 07, 3, 25, 0);
 System.debug(currentDateTime);
+
+
+//All null values
+String greeting;
+System.debug(greeting);
+
+Boolean amIAwake;
+System.debug(amIAwake);
+
+Integer rollNumber;
+System.debug(rollNumber);
+
+Long worldPopulation;
+System.debug(worldPopulation);
+
+Double lightSpeed;
+System.debug(lightSpeed);
+
+Date tDay;
+System.debug(tDay);
+
+Time currentTime;
+System.debug(currentTime);
+
+DateTime currentDateTime;
+System.debug(currentDateTime);
