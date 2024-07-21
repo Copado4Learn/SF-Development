@@ -20,7 +20,7 @@ Double lightSpeed = 93000000/186000;
 System.debug(lightSpeed);
 
 //Date data type
-Date tDay = Date.newInstance(2024, 20, 07);
+Date tDay = Date.newInstance(2024, 07, 20);
 System.debug(tDay);
 
 //Time data type
@@ -28,7 +28,7 @@ Time currentTime = Time.newInstance(3, 25, 0, 0);
 System.debug(currentTime);
 
 //DateTime data type
-DateTime currentDateTime = DateTime.newInstance(2024, 20, 07, 3, 25, 0);
+DateTime currentDateTime = DateTime.newInstance(2024, 07, 20, 3, 25, 0);
 System.debug(currentDateTime);
 
 
