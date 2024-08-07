@@ -11,10 +11,10 @@ Map<Integer, String> class2006 = new Map<Integer, String>();
 
 //adding key-value pairs
 
-class2006.put(278, 'Praveen');
-class2006.put(273, 'Sid');
-class2006.put(272, 'Zubair');
-class2006.put(268, 'Dinesh');
+class2006.put(278, 'Bunty');
+class2006.put(273, 'Rahul');
+class2006.put(272, 'Munna');
+class2006.put(268, 'Sunny');
 
 System.debug(class2006);
 
