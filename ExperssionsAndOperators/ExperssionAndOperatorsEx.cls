@@ -68,4 +68,55 @@ System.debug(result);
 -> It evaluates and prints true, if both the operators are true. 
 */
 result = (first == second);
-System.debug(result);
+System.debug('Compring boolean datatype - :'+result);
+
+// comparing integer datatype
+result = (5 ==5);
+System.debug('Compring integer datatype - :'+result);
+
+// comparing string datatype
+result = ('Hello' == 'World');
+System.debug('Compring String datatype - :'+result);
+
+/*
+*****Less-than operator****
+*/
+result = 5<6;
+System.debug('Comparing integers using less than operator -'+result);
+
+/*
+*****Greater-than operator****
+*/
+result = 5>6;
+System.debug('Comparing integers using greater than operator -'+result);
+
+/*
+*****lessthan&equal to operator****
+*/
+result = 5<=6;
+System.debug('Comparing integers using greater than operator -'+result);
+
+/*
+*****Greaterthan&equal to operator****
+*/
+result = 5>=6;
+System.debug('Comparing integers using greater than operator -'+result);
+
+
+/*
+*****NOT operator****
+*/
+System.debug('Before NOT operator -'+first);
+first = !first;
+System.debug('After NOT operator -'+first);
+
+/*
+*****Ternary operator****
+*/
+
+String greeting = '';
+Integer hour = 10;
+// If the hours is less than 12, then say good morning else good afternoon
+greeting = (hour < 12) ? 'Good Morning' : 'Good Afternoon';
+
+System.debug(greeting);
