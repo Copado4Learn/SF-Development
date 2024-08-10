@@ -1,5 +1,4 @@
 /*
-
 ***SET***
 -> Set is a collection of unordered elements of same datatype.
 -> Set doesn't allow duplicates, it will only persist one single item of same value.

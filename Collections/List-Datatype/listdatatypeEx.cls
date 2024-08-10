@@ -4,7 +4,7 @@
 -> It is a dynamic datatype, that means we can keep adding values to it based on the need.
 -> List is a non-primitive datatype, so need to create a instance of it to use it.
 -> It stores the values based on the indexes, which starts from 0.
--> It's possible to values based on the index position.
+-> You can print values based on the index position.
 */
 
 // new keyword is used to create a instance of the class and allocate memory

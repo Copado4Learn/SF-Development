@@ -1,5 +1,5 @@
 
-// You can use the \’ escape sequence to escape a single quote in a column name
+// You can use the \(backslash) escape sequence to escape a single quote in a column name
 
 String str = 'My gang\'s name is \'chain gang\'.\n We work on Apex program';
 System.debug(str);

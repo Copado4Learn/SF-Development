@@ -1,7 +1,5 @@
 /*
-
 ******MAP*********
-
 -> Like List and Set, it can store a collection of data but in a key-value pair method.
 -> Here, key cannot have duplicates like SET but values can have duplicates like LIST.
 -> Like LIST, it doesn't use indexes, we need to refer the key in order to get the values.
