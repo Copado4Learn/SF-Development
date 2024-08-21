@@ -7,6 +7,7 @@
 Integer year = 1100;
 
 do {
+    System.debug('We are processing year -'+year);
     // check if year is evenly divisible by 4
     if(Math.mod(year, 4) == 0) {
         // check if year is evenly divisible 100
@@ -19,4 +20,5 @@ do {
             System.debug(year +' is a leap year');
         }
     }
-}
+    year++;
+} while(year <= 2000); //year value must be 
