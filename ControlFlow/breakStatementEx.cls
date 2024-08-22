@@ -1,6 +1,7 @@
 /*
 ***********Break Statement*********
 -> use this statement to come out of the loop
+-> Break statement works for all the loops
 */
 
 for(Integer i =10; i>0; i--)
