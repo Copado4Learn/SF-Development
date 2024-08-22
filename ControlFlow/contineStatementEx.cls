@@ -10,7 +10,6 @@ for(Integer i=0; i<7; i++)
 {
     if(daysInaWeek[i] == 'Saturday' || daysInaWeek[i] == 'Thursday')
     {
-        System.debug('Today is '+daysInaWeek[i]+' you CANNOT eat meat');
         continue;
     }
     System.debug('Today is '+daysInaWeek[i]+' you can eat meat');
