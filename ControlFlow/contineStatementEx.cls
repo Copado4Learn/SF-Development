@@ -6,7 +6,8 @@
 
 List<String> daysInaWeek = new List<String> {'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'};
 
-for(Integer i=0; i<7; i++)
+Integer listSize = daysInaWeek.size();
+for(Integer i=0; i<listSize; i++)
 {
     if(daysInaWeek[i] == 'Saturday' || daysInaWeek[i] == 'Thursday')
     {
