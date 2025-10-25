@@ -19,3 +19,26 @@ colorsArray.add('yellow');
 colorsArray.add('white');
 colorsArray.add('black');
 System.debug('After adding values to colorsArray'+colorsArray);
+
+// Create a list and add elements to it in one step
+List<String> telStarName = new List<String> {'Mahesh', 'Prabhas', 'Pawan'};
+System.debug(telStarName);
+
+//List elements can be read by specifying an index between square brackets, known as array notation.
+String SuperStar = telStarName[0];
+String RebelStar = telStarName[1];
+
+System.debug(SuperStar);
+System.debug(RebelStar);
+
+//Also, you can use the get() method to read a list element
+
+String PowerStar = telStarName.get(2);
+System.debug(PowerStar);
+System.assertEquals(telStarName[2], PowerStar);
+
+// Use for loop to iterate over the list and read the elements
+for(String moreColors : colorsList) {
+    // Write value to the debug log
+    System.debug(moreColors);
+}
