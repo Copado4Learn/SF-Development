@@ -22,3 +22,18 @@ for (Database.SaveResult sr : srList) {
 	 }
     }
 }
+
+/*
+***** Use DML statements when -
+Use DML statements if you want any error that occurs during bulk DML processing to be thrown as an Apex exception that 
+immediately interrupts control flow (by using try. . .catch blocks). This behavior is similar to the way exceptions are 
+handled in most database procedural languages.
+
+***** Use Database methods when -
+Use Database class methods if you want to allow partial success of a bulk DML operation—if a record fails, 
+the remainder of the DML operation can still succeed. Your application can then inspect the rejected records and 
+possibly retry the operation. When using this form, you can write code that never throws DML exception errors. 
+Instead, your code can use the appropriate results array to judge success or failure. Note that Database methods 
+also include a syntax that supports thrown exceptions, similar to DML statements.
+
+*/
