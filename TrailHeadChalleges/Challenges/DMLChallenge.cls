@@ -1,15 +1,11 @@
 public class AccountHandler {
-
-public static void insertNewAccount(String accName)
-{
-    Account accName2 = new Account(Name = accName);
-    try {
- 
-    insert accName2;
-} catch (DmlException e) {
-    System.debug('A DML exception has occurred: ' +
-                e.getMessage());
+    public static Account insertNewAccount(String accName) {
+        Account a = new Account(Name = accName);
+        try {
+            insert a;            // attempts DML even if accName is empty
+            return a;            // on success, returns the inserted record (Id populated)
+        } catch (DmlException e) {
+            return null;         // on any DML failure (e.g., required field missing), return null
+        }
+    }
 }
-}
-}
-
