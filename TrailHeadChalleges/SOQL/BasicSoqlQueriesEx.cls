@@ -143,3 +143,31 @@ Account[] acctsWithContacts = [SELECT Name, (SELECT FirstName,LastName FROM Cont
 Contact[] cts = acctsWithContacts[0].Contacts;
 System.debug('Name of first associated contact: '
              + cts[0].FirstName + ', ' + cts[0].LastName);
+
+/*
+*********Query Record in Batches By Using SOQL For Loops**********
+
+With a SOQL for loop, you can include a SOQL query within a for loop. The results of a SOQL query can be iterated over 
+within the loop. SOQL for loops use a different method for retrieving records—records are retrieved using efficient 
+chunking with calls to the query and queryMore methods of the SOAP API. By using SOQL for loops, you can avoid hitting 
+the heap size limit.
+
+SOQL for loops iterate over all of the sObject records returned by a SOQL query.
+*/
+
+// The syntax of a SOQL forloop is either:
+
+for(variable : [soql_query]){
+
+    code_block;
+
+}
+
+// or
+
+for(variable_list : [soql_query]){
+
+    code_block;
+}
+
+// Both  variable and  variable_list must be of the same type as the sObjects that are returned by the  soql_query.
