@@ -72,4 +72,43 @@ FIND {SearchQuery} [IN SearchGroup] [RETURNING ObjectsAndFields]
 -> Also, search terms can include wildcard characters (*, ?).
 -> The * wildcard matches zero or more characters at the middle or end of the search term.
 -> The ? wildcard matches only one character at the middle or end of the search term.
+-> Text searches are case-insensitive. For example, searching for CustomerCopy, customerCopy, 
+    or CUSTOMERCopy all return the same results.
+*/
+
+// SearchGroup is optional. It is the scope of the fields to search. If not specified, the default search scope is all fields.
+
+FIND {SfDC} IN ALL FIELDS RETURNING Account(Name), Contact(FirstName, LastName)
+// or
+FIND {SfDC} RETURNING Account(Name), Contact(FirstName, LastName)
+
+// Above 2 statements will give the same results
+/* SearchGroup can take one of the following values.
+
+    * ALL FIELDS
+    * NAME FIELDS
+    * EMAIL FIELDS
+    * PHONE FIELDS
+    * SIDEBAR FIELDS
+*/
+
+/*
+-> ObjectsAndFields is optional. 
+-> It is the information to return in the search result—a list of one or more sObjects and, within each sObject, a list of one or more fields, with optional values to filter against. 
+-> If not specified, the search results contain the IDs of all objects found.
+*/
+
+// for example -
+FIND {SfDC} IN SIDEBAR FIELDS // without returing
+
+/*
+******Single Words and Phrases***********
+
+A SearchQuery contains two types of text:
+
+    *Single Word— single word, such as test or hello. Words in the SearchQuery are delimited by spaces, punctuation, and changes from letters 
+    to digits (and vice-versa). Words are always case insensitive.
+    
+    *Phrase— collection of words and spaces surrounded by double quotes such as "john smith". Multiple words can be combined together with logic and 
+    grouping operators to form a more complex query.
 */
