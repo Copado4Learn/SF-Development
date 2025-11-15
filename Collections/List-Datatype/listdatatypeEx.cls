@@ -61,4 +61,27 @@ rollnumbers.clear();
 System.debug('This is the rollnumber list after clearing it '+rollnumbers);
 System.debug('This is the size of rollnumber after clearing it: '+rollnumbers.size());
 
+List<Integer> someNum = new List<Integer>();// Define a new list
+someNum.add(1); // when you use the add() method on an Apex List, the new value is always inserted at the very end (the last available index) of the list
+System.debug('Value at Index 0: '+someNum[0]);
+
+Integer i = someNum[0]; // Retrieves the element at index 0
+System.debug('The value of the integer i is :'+i);
+
+//set the value 5 at index 0
+someNum.set(0, 5);
+System.debug('After setting the value at index 0 :'+someNum[0]);
+
+someNum.add(6);
+someNum.add(7);
+someNum.add(8);
+System.debug(someNum);
+
+//Alternative: add(index, element)
+
+someNum.add(2, 10);
+System.debug(someNum);
+
+
+
 
