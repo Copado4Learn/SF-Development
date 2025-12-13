@@ -12,8 +12,7 @@ Set<String> str1 = new Set<String>{'a','b','c','c'};
 System.debug(str1);
 
 /*
-****Explanation of below code*****
-When this line runs:
+****When this line runs:*****
 Apex creates the Set collection in memory.
 It attempts to insert the values in order:
 'a' is added successfully (the set is now {'a'}).

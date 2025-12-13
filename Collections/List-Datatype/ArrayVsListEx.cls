@@ -40,10 +40,21 @@ The code doesn't fail because the List<String> variable type is flexible enough 
 
 */
 
-String[] Str2 = new String[1]; // Array size is already defined
+String[] Str2 = new String[1]; // this is the array notation 
+// Array size is already defined
 // You cannot assign the array values using add method(), array doesn't have add().
 // Instead use the indexes to add the values
 str2.add('Apple');
 str2.add('Orange');
 str2.add('Grape');
 System.debug('The value of the str2 is :'+str2);
+
+//
+String[] groceries = new String[4];
+System.debug('Groceries: ' + groceries);//(null,null,null,null)
+groceries.add('Tea');
+groceries.add('Sugar');
+System.debug('Added 2 items: ' + groceries);//(null,null,null,null, Tea, Sugar)
+groceries.add(1, 'Honey');
+System.debug('Added Honey in index 1: ' + groceries);//(null,Honey,null,null, Tea, Sugar)
+System.debug('Item 0: ' + groceries[0]);//(null)
