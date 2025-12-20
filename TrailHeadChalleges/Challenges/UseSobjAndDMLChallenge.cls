@@ -11,7 +11,7 @@ public class AccountHandler{
             shop.AccountNumber = 'A000N' +counter;
             addAccounts.add(shop);
             System.debug('List after '+counter+' iteration is :'+ addAccounts);
-            //increm
+            //increment the cpunter
             counter ++;
             System.debug('Counter Value after Incrementing ' + counter);
         }
