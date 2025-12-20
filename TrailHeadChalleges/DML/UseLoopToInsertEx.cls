@@ -22,3 +22,12 @@ public class NewAccounts {
         insert teaFactoryAccounts;
     }
 }
+/*
+Why all at once? Because resources are limited, you can use the insert statement in your code
+ only 150 times. One record at a time, you can insert a total of 150 records. 
+ But if each insert statement inserts 10 records, that total increases to 1,500 records. 
+ Inserting multiple objects at once helps with bulkification (combining repetitive tasks 
+ by writing efficient code). At first you may be inserting as few as 10 records at a time.
+  But as your application grows, you might begin to insert 200 records at a time. Using 
+  bulkification from the start prepares your application for growth.
+*/
